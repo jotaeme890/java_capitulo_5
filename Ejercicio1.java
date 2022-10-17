@@ -7,7 +7,7 @@
 
 public class Ejercicio1{
     public static void main (String args[]){
-        System.out.println("Vamos a mostrar los números de 5 en 5 hasta llegar al 100: ");
+        System.out.println("Vamos a mostrar los números de 5 en 5 hasta llegar al 100 con un bucle for: ");
 
         for(int i = 0; i<=100; i =i+5){
             System.out.println(i);
