@@ -34,5 +34,6 @@ public class Ejercicio7 {
                 System.out.println("Contraseña correcta, bienvenido");
             } else 
                 System.out.println("Has gastado todas las oportunidades, lo siento");
+    sc.close();
     }
 }
