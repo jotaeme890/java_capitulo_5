@@ -24,7 +24,7 @@ public class Ejercicio7 {
             if(pass==cont){
                 salir = true;
             } else{
-                System.out.println("Esa no es la contraseña, introduzcala de nuevo");
+                System.out.println("Esa no es la contraseña, introduzcala de nuevo: ");
             }
 
             intentos --;
