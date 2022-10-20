@@ -15,7 +15,7 @@ public class Ejercicio11 {
 
         System.out.println("Números  Potencia 2  Potencia 3 ");
         System.out.println("--------------------------------");
-        for(int i = n; i<n+5; i++){
+        for(int i = n; i<=n+5; i++){
             System.out.printf("%4d %9d %12d  \n",i ,(i*i), (i*i*i) );
         }
         sc.close();
