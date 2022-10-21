@@ -31,13 +31,11 @@ public class Ejercicio21 {
                         nump = num;
                     }
                 }
-            }
-            
+            } 
         } while (num>0);
-
             System.out.println("La media de los impares es: " + sumai/cont);
             System.out.println("El valor par más alto es: " + nump);
-
+            
     sc.close();
     }
 }
