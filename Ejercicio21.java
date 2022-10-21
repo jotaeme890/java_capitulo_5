@@ -20,6 +20,7 @@ public class Ejercicio21 {
         do {
             System.out.print("Dime un número: ");
             num = sc.nextInt();
+
             if(num<1){
                 System.out.println("ERROR!");
             } else{
@@ -31,6 +32,7 @@ public class Ejercicio21 {
                         nump = num;
                     }
                 }
+                
             } 
         } while (num>0);
             System.out.println("La media de los impares es: " + sumai/cont);
