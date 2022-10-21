@@ -11,24 +11,19 @@ import java.util.Scanner;
 public class Ejercicio25 {
     public static void main(String args []){
         Scanner sc= new Scanner(System.in);
+        System.out.print("Dime un número: ");
+        int n = sc.nextInt();
+        int lastDigit = n%10;
 
-        float suma=0;
-        float n;
-        float cont = 0;
-
-        do {
-            System.out.print("Dime un número para añadirlo a la suma: ");
-            n =sc.nextFloat();
-            suma += n;
-
-            cont ++;
-
-        } while (suma < 10000);
-        System.out.println("El total de la suma es: " + suma);
-        System.out.println("El total de valores introducido es: " + cont);
-        System.out.println("La media es: " + suma/cont);
-
-
+        int tmp =n;
+        int rotatedNum = 0;
+        while (tmp/10>0) {
+            rotatedNum = rotatedNum*10;
+            lastDigit = tmp%10;
+            rotatedNum = rotatedNum + lastDigit;
+            tmp /= 10;
+        }
+        System.out.print(rotatedNum = rotatedNum *10 + tmp);
 
         sc.close();
     }
