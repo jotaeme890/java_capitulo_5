@@ -12,12 +12,12 @@ import java.util.Scanner;
 public class Ejercicio28  {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Introduzca un número para saber su factorial: ");
+        System.out.print("Dime un número para saber su factorial: ");
         int n = sc.nextInt();
         int factorial = n;
 
         if (n<0){
-            System.out.println("Introduzca bien los valores, por favor ");
+            System.out.println("Dime bien los valores, por favor ");
         } else{
         for (int i = 1; i<n; i++) {
             factorial*=i;
