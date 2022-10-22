@@ -38,5 +38,6 @@ public class Ejercicio32 {
             }
         }
         System.out.println("La suma de los pares es: " + sumap);
+        sc.close();
     }
 }
