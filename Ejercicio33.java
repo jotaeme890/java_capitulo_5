@@ -30,5 +30,6 @@ public class Ejercicio33 {
                 }
             }
         }
+        sc.close();
     }
 }
