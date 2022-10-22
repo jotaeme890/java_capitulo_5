@@ -32,7 +32,7 @@ public class Ejercicio26 {
             i++;
             
             if(auxDigito == digito){
-                System.out.print("Posición " + i + ", del número introducido " + numero + " coincide con " + digito);
+                System.out.println("Posición " + i + ", del número introducido " + numero + " coincide con " + digito);
             }
             numeroReves /= 10;
         }
