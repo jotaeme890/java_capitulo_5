@@ -18,7 +18,6 @@ public class Ejercicio32 {
         long aux =numero;
         long numeroReves= 0;
         long digito = 0;
-        long i = 0;
         long sumap = 0;
 
         while (aux > 0) {
@@ -28,7 +27,6 @@ public class Ejercicio32 {
         
         while(numeroReves > 0 ){
             digito = numeroReves % 10;
-            i++;
 
             numeroReves /= 10;
             
