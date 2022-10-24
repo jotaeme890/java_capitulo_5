@@ -28,5 +28,6 @@ public class Ejercicio36 {
             System.out.println("ES CAPICUO");
         } else
         System.out.println("NO ES CAPICUO");
+        sc.close();
     }
 }
