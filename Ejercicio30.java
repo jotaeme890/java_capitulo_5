@@ -24,8 +24,7 @@ public class Ejercicio30 {
         int hora2 = sc.nextInt();
         int sdia = 0;
         int sdia2 = 0;
-        int horas=24-hora1+hora2;
-
+        int horas=24-hora1+hora2;/*Con esto lo que hacemos es saber las horas de la hora1 hasta las 00 de ese día y las horas para hora2*/
 
         if(dia1 < 1 || dia1 > 7 || dia2 < 1 || dia2 > 7){
             System.out.println("Esos días no son correctos");
@@ -35,11 +34,10 @@ public class Ejercicio30 {
             sdia = dia1;
             sdia2 = dia2;
 
-            while(sdia+1<sdia2){
+            while(sdia+1<sdia2){ /*Con esto lo que hacemos es que si es de un día a otro no se meta y así no sume 24H másy solo se quede con las H de horas*/
                 horas=horas+24;
                 sdia++;
             }
-
             System.out.print("Entre las "+hora1+" del "+dia1+" y las "+hora2+" del "+dia2+" hay "+horas+"H");
         }
         
