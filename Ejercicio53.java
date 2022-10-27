@@ -13,7 +13,6 @@ public class Ejercicio53 {
         System.out.print("Dime la altura: ");
         int n = sc.nextInt();
         
-
         for (int i = n ; i>=1 ; i--){
             for (int asteriscos=1; asteriscos<=i; asteriscos++){
                 System.out.print("X");
