@@ -24,6 +24,7 @@ public class Ejercicio60 {
             }
             for (int i = altura-2; i < altura ; i++){
                 System.out.println("******" + "  " + "******");
-            }
+        }
+    sc.close();
     }
 }
