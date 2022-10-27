@@ -14,7 +14,7 @@ public class Ejercicio56 {
         int n = sc.nextInt();
         
         for (int i = n ; i>=1 ; i--){
-            for(int espacios = 0; espacios <= n-i ; espacios++){
+            for(int espacios = 0; espacios <= (n-i)-1 ; espacios++){
                 System.out.print(" ");
             }
             for (int asteriscos=1; asteriscos<=i; asteriscos++){
