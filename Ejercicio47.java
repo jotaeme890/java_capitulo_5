@@ -17,31 +17,38 @@ public class Ejercicio47 {
         System.out.print("Dime la altura: ");
         int n = sc.nextInt();
 
-        System.out.print("MMMMMM");
-        System.out.println("");
 
-        for(int i = 1; i <= n/3; i++){
-            System.out.print("M");
-            for (int asteriscos = 1; asteriscos < 5 ; asteriscos ++){
-                System.out.print(" ");
-            }
-            System.out.print("M");
+        if (n % 2 == 0){
+            System.out.println("Dime bien los valores");
+        } else if (n < 5 ){
+            System.out.println("Dime bien los valores");
+        } else{
+            System.out.print("MMMMMM");
             System.out.println("");
-        }
-        
-        System.out.print("MMMMMM");
-        System.out.println("");
-
-        for(int i = 1; i <= n/3; i++){
-            System.out.print("M");
-            for (int asteriscos = 1; asteriscos < 5 ; asteriscos ++){
-                System.out.print(" ");
+    
+            for(int i = 1; i <= n/3; i++){
+                System.out.print("M");
+                for (int asteriscos = 1; asteriscos < 5 ; asteriscos ++){
+                    System.out.print(" ");
+                }
+                System.out.print("M");
+                System.out.println("");
             }
-            System.out.print("M");
+            
+            System.out.print("MMMMMM");
+            System.out.println("");
+    
+            for(int i = 1; i <= n/3; i++){
+                System.out.print("M");
+                for (int asteriscos = 1; asteriscos < 5 ; asteriscos ++){
+                    System.out.print(" ");
+                }
+                System.out.print("M");
+                System.out.println("");
+            }
+            System.out.print("MMMMMM");
             System.out.println("");
         }
         sc.close();
-        System.out.print("MMMMMM");
-        System.out.println("");
     }
 }
