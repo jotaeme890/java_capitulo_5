@@ -49,7 +49,6 @@ public class Ejercicio65 {
                         System.out.print("*");
                     }
                         System.out.println("");
-                        
                 }
             }
         }
