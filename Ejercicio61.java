@@ -14,18 +14,22 @@ public class Ejercicio61 {
         Scanner sc = new Scanner (System.in);
         System.out.print("Dime la altura: ");
         int n = sc.nextInt();
-        for (int i = 1 ; i <= n ; i++) /*Altura*/{
-            for (int espacioslat = 0 ; espacioslat <= i-1 ; espacioslat++){
-                System.out.print(" ");
+        if(n < 3){
+            System.out.println("Dime bien los valores");
+        } else{
+            for (int i = 1 ; i <= n ; i++) /*Altura*/{
+                for (int espacioslat = 0 ; espacioslat <= i-1 ; espacioslat++){
+                    System.out.print(" ");
+                }
+
+                System.out.print("***");
+
+                for(int espaciosint = (n-i)*2 ; espaciosint > 0 ; espaciosint--){
+                    System.out.print(" ");
+                }
+
+                System.out.println("***");
             }
-
-            System.out.print("***");
-
-            for(int espaciosint = (n-i)*2 ; espaciosint > 0 ; espaciosint--){
-                System.out.print(" ");
-            }
-
-            System.out.println("***");
         }
         sc.close();
     }
