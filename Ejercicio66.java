@@ -32,7 +32,7 @@ public class Ejercicio66 {
                 System.out.println("");
             }
     
-            for(int i =n/2; i >= 1 ; i--){
+            for(int i = n/2 ; i >= 1 ; i--){
                 for(int espacioslat = 0 ; espacioslat <= (n/2)+i ; espacioslat++){
                     System.out.print(" ");
                 }
