@@ -40,7 +40,7 @@ public class Ejercicio47 {
             System.out.print("M");
             System.out.println("");
         }
-
+        sc.close();
         System.out.print("MMMMMM");
         System.out.println("");
     }
