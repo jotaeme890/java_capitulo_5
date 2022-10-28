@@ -41,5 +41,6 @@ public class Ejercicio66 {
                 System.out.println("");
             } 
         }
+        sc.close();
     }
 }
