@@ -38,9 +38,10 @@ public class Ejercicio43 {
                 auxiliar +=(int)(numero%10)*Math.pow(10,i);
                 numero /= 10;
             }
-            
+
             System.out.println("Los valores son " + numero + " y parte en " +auxiliar);
         }
+        sc.close();
     }
 }
 
