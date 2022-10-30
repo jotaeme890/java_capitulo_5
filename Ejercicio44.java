@@ -35,7 +35,7 @@ public class Ejercicio44 {
         } else if(partir == cont){
             System.out.println("Dime bien los valores");
         }  else if (partir < cont){
-            for(int i = 0 ; i <= cont-partir ; i++){
+            for(int i = 0 ; i < cont-partir ; i++){
                 auxiliar += (int)(numero%10)*Math.pow(10,i);
                 numero /= 10;
             }
