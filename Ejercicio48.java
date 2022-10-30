@@ -9,42 +9,123 @@
 
 import java.util.Scanner;
 
-public class Ejercicio48 {
-    public static void main (String args []){
-        Scanner sc = new Scanner (System.in);
+public class Ejercicio48{
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
         System.out.print("Dime un número: ");
         long numero = sc.nextLong();
-        String dentro = "";
-        String fuera = "";
-
-        long aux = numero;
-
-        for (int i = 0 ; i<= 9 ; i++){ //tiene todos los dígitos posible
-            aux = numero;
-            while(aux >= 10){ //todos los dígitos del número
-                if(aux%10 == i){
-                    dentro += i;
-                    aux = -1; //para salir del while
-                } else
-                    aux/=10; //divido entre 10 para achicar el número
+        boolean cero=true;
+        boolean uno=true;
+        boolean dos=true;
+        boolean tres=true;
+        boolean cuatro=true;
+        boolean cinco=true;
+        boolean seis=true;
+        boolean siete=true;
+        boolean ocho=true;
+        boolean nueve=true;
+        
+        while(numero > 0){
+            if(numero%10 == 0){
+                cero=false;
             }
-            if(aux == i){
-                dentro += i ; //almacenos en la variable para despues mostrarlas
-                aux = -1; //para salir del while
+            if(numero%10 == 1){
+                uno=false;
             }
+            if(numero%10 == 2){
+                dos=false;
+            }
+            if(numero%10 == 3){
+                tres=false;
+            }
+            if(numero%10 == 4){
+                cuatro=false;
+            }
+            if(numero%10 == 5){
+                cinco=false;
+            }
+            if(numero%10 == 6){
+                seis=false;
+            }
+            if(numero%10 == 7){
+                siete=false;
+            }
+            if(numero%10 == 8){
+                ocho=false;
+            }
+            if(numero%10 == 9){
+                nueve=false;
+            }
+            numero/=10;
         }
         
-        long usado = Long.parseLong(dentro);
+        System.out.print("Los numeros que aparecen son: ");
 
-        for (int i=123456789; i>10; i/=10){
-            if (i%10 == usado%10){
-                usado /= 10;
-            }else {
-                fuera=i%10 + "" +fuera;
-            }
+        if(cero == false){
+            System.out.print("0");
         }
-        
-        System.out.print("Los valores que salen son: " + dentro + " y los valores que no salen son: " + fuera);
+        if(uno == false){
+            System.out.print("1");
+        }
+        if(dos == false){
+            System.out.print("2");
+        }
+        if(tres == false){
+            System.out.print("3");
+        }
+        if(cuatro == false){
+            System.out.print("4");
+        }
+        if(cinco == false){
+            System.out.print("5");
+        }
+        if(seis == false){
+            System.out.print("6");
+        }
+        if(siete == false){
+            System.out.print("7");
+        }
+        if(ocho == false){
+            System.out.print("8");
+        }
+        if(nueve == false){
+            System.out.print("9");
+        }
+
+        System.out.println("");
+
+        System.out.print("Los numeros que no aparecen son: ");
+
+        if(cero){
+            System.out.print("0");
+        }
+        if(uno){
+            System.out.print("1");
+        }
+        if(dos){
+            System.out.print("2");
+        }
+        if(tres){
+            System.out.print("3");
+        }
+        if(cuatro){
+            System.out.print("4");
+        }
+        if(cinco){
+            System.out.print("5");
+        }
+        if(seis){
+            System.out.print("6");
+        }
+        if(siete){
+            System.out.print("7");
+        }
+        if(ocho){
+            System.out.print("8");
+        }
+        if(nueve){
+            System.out.print("9");
+        }
         sc.close();
     }
 }
