@@ -26,7 +26,7 @@ public class Ejercicio48 {
                     dentro += i;
                     aux = -1; //para salir del while
                 } else
-                    aux/=10;
+                    aux/=10; //divido entre 10 para achicar el número
             }
             if(aux == i){
                 dentro += i ; //almacenos en la variable para despues mostrarlas
