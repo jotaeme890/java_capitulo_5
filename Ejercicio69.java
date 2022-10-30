@@ -37,7 +37,7 @@ public class Ejercicio69 {
             } else{
                 for(int asterisco = 1 ; asterisco <= (2*i)+4 ; asterisco++){
                     System.out.print("X");  
-            }
+                }
             }
             
             System.out.println("");
