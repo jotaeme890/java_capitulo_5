@@ -42,7 +42,7 @@ public class Ejercicio44 {
 
             System.out.print("El número sería: "+ "" + numero + numero2 + auxiliar);
 
-
         }
+        sc.close();
     }
 }
