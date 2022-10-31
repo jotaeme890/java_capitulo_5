@@ -17,7 +17,7 @@ public class Ejercicio67 {
         int altura = sc.nextInt();
 
         for(int i=1;i<=n;i++){ //altura total
-            for(int b=1;b<=altura;b++){ //tamaño escalon
+            for(int b=1;b<=altura;b++){ //altura escalon
                 for(int c=1;c<=i;c++){ //pintamos asteriscos
                     System.out.print("****");
                 }
