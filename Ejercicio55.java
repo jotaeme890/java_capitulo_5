@@ -18,5 +18,6 @@ public class Ejercicio55 {
         numero/=10; //achicamos el número
         System.out.print(digit);
         System.out.print(numero);
+        sc.close();
     }
 }
