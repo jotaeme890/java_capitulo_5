@@ -15,9 +15,9 @@ public class Ejercicio20 {
         
 
         for (int i=1; i<=n-1 ; i++){
-            for(int espacios=n-i ; espacios>0 ; espacios--)
-            System.out.print(" ");
-
+            for(int espacios=n-i ; espacios>0 ; espacios--){
+                System.out.print(" ");
+            }
             System.out.print("*");
 
             for (int asteriscos=1; asteriscos<=((2*i)-1)-2; asteriscos++){
