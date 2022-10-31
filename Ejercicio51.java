@@ -19,7 +19,6 @@ public class Ejercicio51 {
         long numeroReves= 0;
         long numeroReves2= 0;
         long digito = 0;
-        boolean come = false;
 
         while (aux > 0) {
             numeroReves = (numeroReves *10) + (aux % 10);
@@ -30,7 +29,6 @@ public class Ejercicio51 {
             digito = numeroReves % 10;
             if( digito == 0 || digito == 8){
                 System.out.print("");
-                come=true;
             } else{
                 numeroReves2 = ((numeroReves2 * 10)) + (digito);
             }
