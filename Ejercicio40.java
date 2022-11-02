@@ -56,7 +56,7 @@ public class Ejercicio40 {
             }
             System.out.println("*");
         sc.close();
+        }
     }
-}
 }
 
