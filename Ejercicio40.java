@@ -24,7 +24,7 @@ public class Ejercicio40 {
             for(int central = 0; central <= n/2; central++){
                 System.out.print(" ");
             }
-            System.out.println("*");
+            System.out.println("*");         
     
             for (int i = n/2  ; i >= 2 ; i--) /*Altura*/{ //int i = n/2 i 1
                 for(int espacioslat = 0 ; espacioslat < i ; espacioslat++) { /*Creamos los espacios laterales */
