@@ -15,7 +15,7 @@ public class Ejercicio39 {
         int n1 = sc.nextInt();
 
         for (int n = 1; n <= n1; n++) {
-            int factorial = n;
+            long factorial = n;
         
         for (int i = 1 ; i < n ; i++){
             factorial *= i;
