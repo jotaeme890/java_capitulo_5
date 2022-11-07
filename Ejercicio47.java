@@ -26,7 +26,7 @@ public class Ejercicio47 {
             System.out.print("MMMMMM");
             System.out.println("");
     
-            for(int i = 1; i <= n/3; i++){
+            for(int i = 1; i <= (n-3)/2; i++){
                 System.out.print("M");
                 for (int asteriscos = 1; asteriscos < 5 ; asteriscos ++){
                     System.out.print(" ");
@@ -38,7 +38,7 @@ public class Ejercicio47 {
             System.out.print("MMMMMM");
             System.out.println("");
     
-            for(int i = 1; i <= n/3; i++){
+            for(int i = 1; i <= (n-3)/2; i++){
                 System.out.print("M");
                 for (int asteriscos = 1; asteriscos < 5 ; asteriscos ++){
                     System.out.print(" ");
