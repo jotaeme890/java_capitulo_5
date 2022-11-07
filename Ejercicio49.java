@@ -25,11 +25,12 @@ public class Ejercicio49 {
             System.out.print("Dime un número: ");
             numero = sc.nextInt();
             esprimo = true;
-            for(int i = 2; i < numero ; i++){ //comprobamos si el número es primo
+            for(int i = 2; i <= numero/2 ; i++){ //comprobamos si el número es primo
                 if ((numero % i) == 0) { 
                     esprimo = false;
                 }
             }
+            
             if (!esprimo){
                 contador ++;
                 if (numero<minimo){
