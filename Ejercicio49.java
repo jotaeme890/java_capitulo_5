@@ -16,7 +16,7 @@ public class Ejercicio49 {
         int numero = 0;
         int maximo = 0;
         int minimo = 2147483647;
-        int suma = 0;
+        double suma = 0;
         boolean esprimo = false;
         int contador = 0;
 
@@ -41,7 +41,8 @@ public class Ejercicio49 {
                 suma+=numero;
             }
         }   
-        System.out.println("Ha introducido "+ contador + " números no primos \n" + "El máximo: " + maximo + "\nEl mínimo: " + minimo + "\nLa media: " + suma/contador );
+        double media = suma/contador;
+        System.out.println("Ha introducido "+ contador + " números no primos \n" + "El máximo: " + maximo + "\nEl mínimo: " + minimo + "\nLa media: " + media );
         sc.close();
     }
 }
