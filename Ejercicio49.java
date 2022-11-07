@@ -42,9 +42,13 @@ public class Ejercicio49 {
                 suma+=numero;
             }
         }   
-        double media = suma/contador;
-        System.out.println("Ha introducido "+ contador + " números no primos \n" + "El máximo: " + maximo + "\nEl mínimo: " + minimo + "\nLa media: " + media );
-        sc.close();
+        if(contador!=0){
+            double media = suma/contador;
+            System.out.println("Ha introducido "+ contador + " números no primos \n" + "El máximo: " + maximo + "\nEl mínimo: " + minimo + "\nLa media: " + media );
+            sc.close();
+        } else{
+            System.out.print("Dime bien los valores");
+        }
     }
 }
 
