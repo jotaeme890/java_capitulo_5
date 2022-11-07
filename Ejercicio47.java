@@ -26,7 +26,7 @@ public class Ejercicio47 {
             System.out.print("MMMMMM");
             System.out.println("");
     
-            for(int i = 1; i <= (n-3)/2; i++){
+            for(int i = 1; i <= (n-3)/2; i++){ //menos 3 ya que hay 3 lineas fijas y las que varian son 2, por eso el partido 2
                 System.out.print("M");
                 for (int asteriscos = 1; asteriscos < 5 ; asteriscos ++){
                     System.out.print(" ");
