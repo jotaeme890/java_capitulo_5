@@ -20,7 +20,6 @@ public class Ejercicio49 {
         boolean esprimo = false;
         int contador = 0;
 
-        
         while (!esprimo){
             System.out.print("Dime un número: ");
             numero = sc.nextInt();
@@ -31,8 +30,11 @@ public class Ejercicio49 {
                 }
             }
             
-            if (!esprimo){
+            if (numero==1 || !esprimo){ //al dar error con el 1 por que lo detecta como primo y no lo es, lo tendremos en cuenta
                 contador ++;
+                if(numero==1){
+                    esprimo = false;
+                }
                 if (numero<minimo){
                     minimo=numero;
                 }
@@ -42,6 +44,7 @@ public class Ejercicio49 {
                 suma+=numero;
             }
         }   
+
         if(contador!=0){
             double media = suma/contador;
             System.out.println("Ha introducido "+ contador + " números no primos \n" + "El máximo: " + maximo + "\nEl mínimo: " + minimo + "\nLa media: " + media );
