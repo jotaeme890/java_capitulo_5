@@ -16,26 +16,17 @@ public class Ejercicio52 {
         long numero = sc.nextLong();
 
         long aux =numero;
-        long numeroReves= 0;
-        long numeroFinal= 0;
-        long digito = 0;
+        long contador= 0;
 
-        while (aux > 0) {
-            if(aux > 10){
-                numeroReves = (numeroReves *10) + (aux % 10);
-            } else {
-                digito = aux % 10;
-            }
+        while (aux > 0) { //contamos los digitos
             aux /= 10;
-        }
-        
-        while(numeroReves > 0 ){
-            numeroFinal = ((numeroFinal * 10) + (numeroReves %10));
-            numeroReves /= 10;
+            contador++;
         }
 
-        numeroFinal = ((numeroFinal * 10) + (digito));
-        System.out.print("El resultado del número es: " + numeroFinal);
+        long digito = (int)(numero / Math.pow(10,contador-1)); // sacamos el primer número para moverlo a la derecha (1234, cogeria el 1)
+        int  resto = (int)(numero % Math.pow(10,contador-1)); // sacamos el resto del número (1234, cogeria el 234)
+
+        System.out.printf("El número resultado es %d" , resto*10+digito); // tenemos el resto el cual lo multiplicamos por 10 para que al sumarle el primero esté bien
         sc.close();
     }
 }
