@@ -25,7 +25,7 @@ public class Ejercicio26 {
         while (aux > 0) {
             numeroReves = (numeroReves *10) + (aux %10);
             aux /= 10;
-        }
+        }   
 
         while (numeroReves > 0) {
             auxDigito = numeroReves % 10;
